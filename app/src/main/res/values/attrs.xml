@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="LabelWidth" format="dimension" />
+    <attr name="LabelText" format="string" />
+    <attr name="TextWidth" format="dimension"/>
+    <attr name="TextEnabled" format="boolean"/>
+    <attr name="FontSize" format="dimension"/>
+
+    <declare-styleable name="PersianDatePickerView" >
+        <attr name="LabelWidth"  />
+        <attr name="LabelText"  />
+        <attr name="TextWidth" />
+        <attr name="TextEnabled" />
+        <attr name="FontSize"/>
+    </declare-styleable>
+    <declare-styleable name="PersianTimePickerView" >
+        <attr name="LabelWidth"  />
+        <attr name="LabelText"  />
+        <attr name="TextWidth" />
+        <attr name="TextEnabled" />
+        <attr name="FontSize"/>
+
+    </declare-styleable>
+
+
+</resources>

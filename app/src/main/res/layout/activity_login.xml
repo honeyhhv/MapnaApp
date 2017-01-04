@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="100dp"
+    tools:context="com.mapna.mapnaapp.LoginActivity"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <com.mapna.mapnaapp.customViews.customLoginText
+            android:id="@+id/txt_user"
+            style="@style/loginEditTxt"
+            android:layout_alignLeft="@+id/txt_password"
+            android:layout_alignStart="@+id/txt_password"
+            android:drawableRight="@mipmap/ic_action_username"
+            android:hint="@string/user"
+            app:et_labelEnable="true"
+            app:et_labelTextColor="@color/cardview_shadow_start_color"
+            app:et_labelTextSize="20dp"
+            app:et_supportMode="none" />
+
+        <com.mapna.mapnaapp.customViews.customLoginText
+            android:id="@+id/txt_password"
+            style="@style/loginEditTxt"
+            android:layout_below="@id/txt_user"
+            android:layout_marginTop="20dp"
+            android:drawableRight="@mipmap/ic_action_password"
+            android:hint="@string/pass"
+            android:inputType="textPassword"
+            app:et_labelEnable="true"
+            app:et_labelTextColor="@color/cardview_shadow_start_color"
+            app:et_labelTextSize="20dp"
+            app:et_supportMode="none" />
+
+        <com.mapna.mapnaapp.customViews.customButton
+            android:id="@+id/btn_login"
+            style="@style/btnlog"
+            android:layout_below="@id/txt_password"
+            android:layout_marginTop="10dp"
+            android:drawableRight="@mipmap/unlock_icon"
+            android:layout_centerInParent="true"
+            />
+
+        <com.mapna.mapnaapp.customViews.customProgressbar
+            android:id="@+id/progressbar"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:pv_autostart="true"
+            app:pv_circular="true"
+            android:visibility="invisible"
+            app:pv_progressStyle="@style/Material.Drawable.CircularProgress"
+            app:pv_progressMode="indeterminate"
+             />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

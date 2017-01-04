@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">گروه مپنا</string>
+    <string name="login_name">ورود به گروه مپنا</string>
+    <string name="user">username</string>
+    <string name="pass">password</string>
+    <string name="btnlogin">ورود</string>
+    <string name="error_login">نام کاربری یا رمز عبور اشتباه است</string>
+    <string name="error_Server">خطا در برقراری ارتباط با سرور،وضعیت اینترنت خود را بررسی کرده و مجددا تلاش کنید</string>
+
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_hourly_leave">درخواست مرخصی ساعتی </string>
+    <string name="title_Daily_leave">درخواست مرخصی روزانه </string>
+    <string name="title_overtime_work">درخواست اضافه کار ایام تعطیل </string>
+    <string name="title_Hourly_mission">درخواست ماموریت ساعتی</string>
+
+    <string name="Profile">عکس پروفایل کاربر</string>
+
+    <string name="menu_view_request"> درخواست های قبلی</string>
+    <string name="menu_clock_in_out">ورود و خروج</string>
+    <string name="menu_quit">خروج</string>
+
+    <string name="menu_fab_overword">اضافه کار ایام تعطیل</string>
+    <string name="menu_fab_daily_vac">مرخصی روزانه</string>
+    <string name="menu_fab_hourly_vac">مرخصی ساعتی</string>
+    <string name="menu_fab_daily_mission">ماموریت روزانه</string>
+    <string name="menu_fab_hourly_mission">ماموریت ساعتی</string>
+    <string name="menu_fab_save_request">ماموریت ساعتی</string>
+
+
+    <string name="msg_log_out">کاربر گرامی، آیا مایل به خروج از برنامه می باشید؟</string>
+    <string name="msg_yes">بلی</string>
+    <string name="msg_no">خیر</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="label_leave_date">تاریخ مرخصی:</string>
+    <string name="label_from_time">: از ساعت</string>
+    <string name="label_to_time">تا</string>
+    <string name="label_Desc">توضیحات:</string>
+
+    <string name="mdtp_ok">انتخاب </string>
+    <string name="mdtp_cancel">لغو</string>
+
+</resources>

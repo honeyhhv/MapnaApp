@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mapna.mapnaapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:screenOrientation="portrait"
+        android:allowBackup="true"
+        android:icon="@mipmap/mapna_logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashScreenActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+
+        </activity>
+        <activity android:name=".MainActivity" >
+
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/login_name"
+            android:theme="@style/AppThemeLogin"></activity>
+        <activity
+            android:name=".DrawerActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".services.MyFirebaseInstanceIdService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".services.HandleMessageService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".HourlyLeaveActivity" android:label="@string/title_hourly_leave" >
+
+
+        </activity>
+        <activity android:name=".HourlyMissionActivity" android:label="@string/title_Hourly_mission" >
+
+        </activity>
+        <activity android:name=".DailyLeaveActivity" android:label="@string/title_Daily_leave" >
+
+        </activity>
+        <activity android:name=".OvertimeWorkActivity" android:label="@string/title_overtime_work" >
+
+        </activity>
+    </application>
+
+</manifest>

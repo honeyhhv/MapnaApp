@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_red_light">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="match_parent"
+        android:layout_height="290dp"
+        android:layout_centerVertical="true"
+        android:background="@android:color/white"
+        android:src="@drawable/mapna_splash" />
+
+    <com.rey.material.widget.ProgressView
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/imgLogo"
+        app:pv_autostart="true"
+        app:pv_circular="false"
+        app:pv_progressMode="indeterminate"
+        app:pv_progressStyle="@style/Material.Drawable.LinearProgress" />
+
+</RelativeLayout>

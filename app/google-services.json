@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1031106895271",
+    "firebase_url": "https://mapnaapp.firebaseio.com",
+    "project_id": "mapnaapp",
+    "storage_bucket": "mapnaapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1031106895271:android:e085234b82f24393",
+        "android_client_info": {
+          "package_name": "com.mapna.mapnaapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1031106895271-0kblqse8kq4jco01a3jgavhdvtdfmkaq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mapna.mapnaapp",
+            "certificate_hash": "B53A4438804D8280A842771AC643CBBB9D934D75"
+          }
+        },
+        {
+          "client_id": "1031106895271-k0m8f3j8tlnm6sr1adntlnmg9isc2rj4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbfgUC-Q7rk-mF3yVoQXwf23vwKlet1Zo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1031106895271-k0m8f3j8tlnm6sr1adntlnmg9isc2rj4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

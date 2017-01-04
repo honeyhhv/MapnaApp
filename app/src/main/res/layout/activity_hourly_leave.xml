@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_hourly_leave"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mapna.mapnaapp.HourlyLeaveActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@color/colorPrimary"
+            android:elevation="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.rey.material.widget.ImageView
+                    android:id="@+id/imgBack"
+                    style="@style/Material.Drawable.Ripple.Wave.Light"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:adjustViewBounds="true"
+                    android:background="@color/colorPrimary"
+                    android:src="@mipmap/btn_back" />
+
+                <com.rey.material.widget.ImageView
+                    android:layout_width="52dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/white"
+                    android:src="@drawable/mapna_logo" />
+
+                <com.mapna.mapnaapp.customViews.customTextView
+                    style="@style/titleStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_hourly_leave" />
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layoutDirection="rtl"
+            android:orientation="vertical"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.mapna.mapnaapp.customViews.PersianDatePickerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/inDate"
+                    app:LabelText="@string/label_leave_date"
+                    app:LabelWidth="80dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <com.mapna.mapnaapp.customViews.PersianTimePickerView
+                    android:layout_width="197dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/time_from"
+                    app:LabelText="@string/label_from_time"
+                    app:LabelWidth="80dp" />
+
+                <com.mapna.mapnaapp.customViews.PersianTimePickerView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/time_to"
+                    app:LabelText="@string/label_to_time"
+                    app:LabelWidth="80dp" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

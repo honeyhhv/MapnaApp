@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="FcmToken">15646862312</string>
+    <string name="PersonelId">Pers2one4lI5d</string>
+    <string name="Firstname">Fir2st4nam5e</string>
+    <string name="Lastname">2Las3tn4am5e</string>
+    <string name="Username">Us21ern54ame</string>
+    <string name="Password">45Pas9swor7d</string>
+    <string name="Company">Co3m2p4a5n6y</string>
+    <string name="Management">M3a5na2ge5men7t</string>
+    <string name="Department">De2pa4rt5me5nt</string>
+    <string name="Title">2Ti2t3l4e</string>
+    <string name="ExpiredDate">1564Exj45redDate68d312</string>
+    <string name="Domain">D6om6air976n</string>
+</resources>
