@@ -79,7 +79,13 @@ public class PersianTimePickerView extends LinearLayout implements View.OnClickL
     private void setCaption(String caption) {
         lblName.setText(caption);
     }
+    public String getTime()
+    {
+        if (String.valueOf(txtInput.getText())!=null)
+        {return txtInput.getText().toString();}
+        else {return null;}
 
+    }
     @Override
     public void onClick(View v) {
         switch (v.getId())

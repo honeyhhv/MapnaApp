@@ -61,19 +61,20 @@
             android:layout_gravity="right"
             android:layoutDirection="rtl"
             android:orientation="vertical"
+            android:paddingLeft="16dp"
             android:paddingRight="16dp"
-            android:paddingTop="16dp"
             android:weightSum="1">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:paddingTop="16dp">
 
                 <com.mapna.mapnaapp.customViews.PersianDatePickerView
+                    android:id="@+id/inDate"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/inDate"
                     app:LabelText="@string/label_leave_date"
                     app:LabelWidth="80dp" />
 
@@ -81,26 +82,58 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="16dp">
 
                 <com.mapna.mapnaapp.customViews.PersianTimePickerView
-                    android:layout_width="197dp"
-                    android:layout_height="40dp"
                     android:id="@+id/time_from"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
                     app:LabelText="@string/label_from_time"
                     app:LabelWidth="80dp" />
 
                 <com.mapna.mapnaapp.customViews.PersianTimePickerView
+                    android:id="@+id/time_to"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
-                    android:id="@+id/time_to"
-                    app:LabelText="@string/label_to_time"
-                    app:LabelWidth="80dp" />
+                    app:LabelText="@string/label_to"
+                    app:LabelWidth="20dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="16dp"
+                android:weightSum="1">
+
+                <com.mapna.mapnaapp.customViews.customTextView
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:text="@string/label_Desc" />
+
+                <com.rey.material.widget.EditText
+                    android:id="@+id/txtDesc"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:foregroundGravity="right" />
 
             </LinearLayout>
 
 
+            <com.mapna.mapnaapp.customViews.customButton
+                android:id="@+id/btn_login"
+                style="@style/btnlog"
+                android:layout_below="@+id/btnSend"
+                android:layout_marginTop="16dp"
+                android:drawableRight="@mipmap/send"
+                android:layout_gravity="left"
+                android:layout_width="48dp"
+                android:layout_height="wrap_content" />
 
         </LinearLayout>
 

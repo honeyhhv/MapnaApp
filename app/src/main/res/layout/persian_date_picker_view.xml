@@ -19,7 +19,8 @@
             android:inputType="text"
             android:enabled="false"
             android:layoutDirection="rtl"
-            />
+            android:gravity="center_vertical"
+            android:layout_weight="1"/>
 
         <ImageButton
             android:id="@+id/imgPickDate"

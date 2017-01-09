@@ -35,8 +35,16 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
     <string name="label_leave_date">تاریخ مرخصی:</string>
-    <string name="label_from_time">: از ساعت</string>
-    <string name="label_to_time">تا</string>
+    <string name="label_mission_date">تاریخ ماموریت:</string>
+    <string name="label_mission_title">موضوع ماموریت:</string>
+    <string name="label_mission_Location">محل ماموریت:</string>
+    <string name="label_mission_Desc">شرح ماموریت:</string>
+    <string name="label_from_time">از ساعت:</string>
+    <string name="label_from_Date">از تاریخ:</string>
+    <string name="label_to">تا</string>
+    <string name="label_Daily1">روزانه با حقوق</string>
+    <string name="label_Daily2">اضطرار</string>
+    <string name="label_Daily3">استعلاجی</string>
     <string name="label_Desc">توضیحات:</string>
 
     <string name="mdtp_ok">انتخاب </string>

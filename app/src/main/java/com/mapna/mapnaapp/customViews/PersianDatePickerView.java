@@ -77,6 +77,13 @@ public class PersianDatePickerView extends LinearLayout implements View.OnClickL
 
         lblName.setText(caption);
     }
+    public String getDate()
+    {
+        if (String.valueOf(txtInput.getText())!=null)
+        {return txtInput.getText().toString();}
+        else {return null;}
+
+    }
     @Override
     public void onClick(View v) {
         switch (v.getId())

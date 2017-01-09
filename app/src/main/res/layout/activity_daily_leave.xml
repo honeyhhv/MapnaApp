@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/activity_hourly_leave"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -52,5 +53,111 @@
 
 
         </android.support.v7.widget.Toolbar>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layoutDirection="rtl"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="16dp">
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:orientation="horizontal">
+
+                    <RadioButton
+                        android:text="@string/label_Daily1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rdoDaily1"
+                        android:layout_weight="1"
+                        android:checked="true" />
+
+                    <RadioButton
+                        android:text="@string/label_Daily2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rdoDaily2"
+                        android:layout_weight="1" />
+
+                    <RadioButton
+                        android:text="@string/label_Daily3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rdoDaily3"
+                        android:layout_weight="1" />
+                </RadioGroup>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="16dp">
+
+                <com.mapna.mapnaapp.customViews.PersianDatePickerView
+                    android:id="@+id/txtDateTo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:LabelText="@string/label_from_Date"
+                    app:LabelWidth="80dp" />
+
+                <com.mapna.mapnaapp.customViews.PersianDatePickerView
+                    android:id="@+id/txtDateFrom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:LabelText="@string/label_to"
+                    app:LabelWidth="10dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="16dp">
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="16dp"
+                android:weightSum="1">
+
+                <com.mapna.mapnaapp.customViews.customTextView
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:text="@string/label_Desc" />
+
+                <com.rey.material.widget.EditText
+                    android:id="@+id/txtDesc"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:foregroundGravity="right" />
+
+            </LinearLayout>
+
+
+            <com.mapna.mapnaapp.customViews.customButton
+                android:id="@+id/btn_login"
+                style="@style/btnlog"
+                android:layout_below="@+id/btnSend"
+                android:layout_marginTop="16dp"
+                android:drawableRight="@mipmap/send"
+                android:layout_gravity="left"
+                android:layout_width="48dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
     </LinearLayout>
 </RelativeLayout>
