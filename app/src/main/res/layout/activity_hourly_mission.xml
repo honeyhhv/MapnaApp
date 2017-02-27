@@ -5,7 +5,7 @@
     android:id="@+id/activity_hourly_leave"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.mapna.mapnaapp.HourlyMissionActivity">
+    tools:context="com.mapna.mapnaapp.activityClass.HourlyMissionActivity">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -74,7 +74,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     app:LabelText="@string/label_mission_date"
-                    app:LabelWidth="90dp" />
+                    app:LabelWidth="100dp" />
 
             </LinearLayout>
 
@@ -89,11 +89,11 @@
                     android:layout_width="wrap_content"
                     android:layout_height="40dp"
                     app:LabelText="@string/label_from_time"
-                    app:LabelWidth="90dp" />
+                    app:LabelWidth="100dp" />
 
                 <com.mapna.mapnaapp.customViews.PersianTimePickerView
                     android:id="@+id/time_to"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="40dp"
                     app:LabelText="@string/label_to"
                     app:LabelWidth="20dp" />

@@ -1,4 +1,4 @@
-package com.mapna.mapnaapp;
+package com.mapna.mapnaapp.activityClass;
 
 import android.app.Dialog;
 import android.support.v7.app.AppCompatActivity;
@@ -8,7 +8,7 @@ import android.widget.Button;
 import com.mapna.mapnaapp.utils.DatePickerDailog;
 import com.mapna.mapnaapp.R;
 import android.util.Log;
-import com.mapna.mapnaapp.utils.DatePickerDailog;
+
 import com.mapna.mapnaapp.utils.JalaliCalendar;
 
 
@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
                         datedialog.dismiss();
 
                         btn_date.setText(c.toString());
-                        Log.e("Tarikh:   ", c.toString());
+                        Log.e("Tarikh:   ",  c.toString());
                     }
 
                     @Override

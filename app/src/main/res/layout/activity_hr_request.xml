@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_hr_request"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mapna.mapnaapp.activityClass.HrRequestActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@color/colorPrimary"
+            android:elevation="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.rey.material.widget.ImageView
+                    android:id="@+id/imgBack"
+                    style="@style/Material.Drawable.Ripple.Wave.Light"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:adjustViewBounds="true"
+                    android:background="@color/colorPrimary"
+                    android:src="@mipmap/btn_back" />
+
+                <com.rey.material.widget.ImageView
+                    android:layout_width="52dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/white"
+                    android:src="@drawable/mapna_logo" />
+
+                <com.mapna.mapnaapp.customViews.customTextView
+                    style="@style/titleStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_hr_request" />
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layoutDirection="rtl"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:textDirection="rtl"
+            android:weightSum="1">
+
+            <Spinner
+                android:id="@+id/req_type_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="48dp" />
+
+            <Spinner
+                android:id="@+id/period_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="48dp" />
+
+            <com.mapna.mapnaapp.customViews.customButton
+                android:id="@+id/btnSearch"
+                style="@style/btnlog"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:drawableRight="@mipmap/search_icon" />
+
+            <com.mapna.mapnaapp.customViews.customProgressbar
+                android:id="@+id/progressbar"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:visibility="invisible"
+                app:pv_autostart="true"
+                app:pv_circular="true"
+                app:pv_progressMode="indeterminate"
+                app:pv_progressStyle="@style/Material.Drawable.LinearProgress" />
+            <ListView
+                android:id="@+id/listRequest"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

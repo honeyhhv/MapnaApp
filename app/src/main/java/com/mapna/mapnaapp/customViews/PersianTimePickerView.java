@@ -116,5 +116,6 @@ public class PersianTimePickerView extends LinearLayout implements View.OnClickL
         String minuteString = minute < 10 ? "0"+minute : ""+minute;
         String time = hourString+":"+minuteString;
         txtInput.setText(time);
+        txtInput.setEnabled(true);
     }
 }

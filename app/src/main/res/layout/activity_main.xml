@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
-    tools:context="com.mapna.mapnaapp.MainActivity">
+    tools:context="com.mapna.mapnaapp.activityClass.MainActivity">
 
     <Button
         android:text="Button"

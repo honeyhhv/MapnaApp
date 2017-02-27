@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_hourly_leave"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.mapna.mapnaapp.OvertimeWorkActivity">
+    tools:context="com.mapna.mapnaapp.activityClass.OvertimeWorkActivity">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
         android:orientation="vertical">
 
         <android.support.v7.widget.Toolbar
@@ -19,38 +23,148 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
                 <com.rey.material.widget.ImageView
                     android:id="@+id/imgBack"
                     style="@style/Material.Drawable.Ripple.Wave.Light"
-                    android:background="@color/colorPrimary"
                     android:layout_width="45dp"
                     android:layout_height="45dp"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
                     android:layout_centerVertical="true"
                     android:adjustViewBounds="true"
-                    android:src="@mipmap/btn_back"/>
+                    android:background="@color/colorPrimary"
+                    android:src="@mipmap/btn_back" />
 
                 <com.rey.material.widget.ImageView
                     android:layout_width="52dp"
                     android:layout_height="match_parent"
-                    android:layout_alignParentRight="true"
                     android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
                     android:adjustViewBounds="true"
                     android:background="@android:color/white"
-                    android:src="@drawable/mapna_logo"/>
+                    android:src="@drawable/mapna_logo" />
 
                 <com.mapna.mapnaapp.customViews.customTextView
+                    style="@style/titleStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/title_overtime_work"
-                    style="@style/titleStyle" />
+                    tools:ignore="RelativeOverlap" />
 
             </RelativeLayout>
 
 
-
         </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layoutDirection="rtl"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="16dp">
+
+                <com.mapna.mapnaapp.customViews.PersianDatePickerView
+                    android:id="@+id/inDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:LabelText="@string/label_overtime_date"
+                    app:LabelWidth="100dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="16dp">
+
+                <com.mapna.mapnaapp.customViews.PersianTimePickerView
+                    android:id="@+id/time_from"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    app:LabelText="@string/label_from_time"
+                    app:LabelWidth="100dp" />
+
+                <com.mapna.mapnaapp.customViews.PersianTimePickerView
+                    android:id="@+id/time_to"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    app:LabelText="@string/label_to"
+                    app:LabelWidth="20dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="16dp">
+
+                <com.mapna.mapnaapp.customViews.customTextView
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:text="@string/label_overtime_building" />
+
+                <Spinner
+                    android:id="@+id/building_spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1" />
+
+                <com.mapna.mapnaapp.customViews.customTextView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:text="@string/label_overtime_floor" />
+
+                <Spinner
+                    android:id="@+id/floor_spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="16dp"
+                android:weightSum="1">
+
+                <com.mapna.mapnaapp.customViews.customTextView
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:text="@string/label_overtime_desc" />
+
+                <com.rey.material.widget.EditText
+                    android:id="@+id/txtDesc"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:foregroundGravity="right" />
+
+            </LinearLayout>
+
+            <com.mapna.mapnaapp.customViews.customButton
+                android:id="@+id/btn_login"
+                style="@style/btnlog"
+                android:layout_below="@+id/btnSend"
+                android:layout_marginTop="16dp"
+                android:drawableRight="@mipmap/send"
+                android:layout_gravity="left"
+                android:layout_width="48dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
     </LinearLayout>
 </RelativeLayout>

@@ -5,7 +5,7 @@
     android:id="@+id/activity_hourly_leave"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.mapna.mapnaapp.HourlyLeaveActivity">
+    tools:context="com.mapna.mapnaapp.activityClass.HourlyLeaveActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -58,7 +58,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_gravity="right"
+            android:layout_gravity="center_vertical"
             android:layoutDirection="rtl"
             android:orientation="vertical"
             android:paddingLeft="16dp"
@@ -95,7 +95,7 @@
 
                 <com.mapna.mapnaapp.customViews.PersianTimePickerView
                     android:id="@+id/time_to"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="40dp"
                     app:LabelText="@string/label_to"
                     app:LabelWidth="20dp" />

@@ -5,14 +5,14 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
-        android:screenOrientation="portrait"
         android:allowBackup="true"
         android:icon="@mipmap/mapna_logo"
         android:label="@string/app_name"
+        android:screenOrientation="portrait"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".SplashScreenActivity"
+            android:name=".activityClass.SplashScreenActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,20 +20,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" >
-
-        </activity>
+        <activity android:name=".activityClass.MainActivity"></activity>
         <activity
-            android:name=".LoginActivity"
+            android:name=".activityClass.LoginActivity"
             android:label="@string/login_name"
-            android:theme="@style/AppThemeLogin"></activity>
+            android:theme="@style/AppThemeLogin" />
         <activity
-            android:name=".DrawerActivity"
+            android:name=".activityClass.DrawerActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme">
-
-
-        </activity>
+            android:theme="@style/AppTheme"></activity>
 
         <service android:name=".services.MyFirebaseInstanceIdService">
             <intent-filter>
@@ -46,19 +41,22 @@
             </intent-filter>
         </service>
 
-        <activity android:name=".HourlyLeaveActivity" android:label="@string/title_hourly_leave" >
-
+        <activity
+            android:name=".activityClass.HourlyLeaveActivity"
+            android:label="@string/title_hourly_leave" />
+        <activity
+            android:name=".activityClass.HourlyMissionActivity"
+            android:label="@string/title_Hourly_mission" />
+        <activity
+            android:name=".activityClass.DailyLeaveActivity"
+            android:label="@string/title_Daily_leave"></activity>
+        <activity
+            android:name=".activityClass.OvertimeWorkActivity"
+            android:label="@string/title_overtime_work"></activity>
+        <activity android:name=".activityClass.HrRequestActivity">
 
         </activity>
-        <activity android:name=".HourlyMissionActivity" android:label="@string/title_Hourly_mission" >
 
-        </activity>
-        <activity android:name=".DailyLeaveActivity" android:label="@string/title_Daily_leave" >
-
-        </activity>
-        <activity android:name=".OvertimeWorkActivity" android:label="@string/title_overtime_work" >
-
-        </activity>
     </application>
 
 </manifest>

@@ -5,7 +5,7 @@
     android:id="@+id/activity_hourly_leave"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.mapna.mapnaapp.DailyLeaveActivity">
+    tools:context="com.mapna.mapnaapp.activityClass.DailyLeaveActivity">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

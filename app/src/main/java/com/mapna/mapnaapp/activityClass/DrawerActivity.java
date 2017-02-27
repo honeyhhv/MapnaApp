@@ -1,8 +1,7 @@
-package com.mapna.mapnaapp;
+package com.mapna.mapnaapp.activityClass;
 
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.preference.Preference;
 import android.preference.PreferenceManager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AlertDialog;
@@ -15,6 +14,7 @@ import android.widget.ImageView;
 import android.widget.ListView;
 
 import com.github.clans.fab.FloatingActionButton;
+import com.mapna.mapnaapp.R;
 import com.mapna.mapnaapp.adaptor.DrawerListAdapter;
 import com.mapna.mapnaapp.customViews.customTextView;
 import com.mapna.mapnaapp.models.DrawerListItem;
@@ -96,21 +96,31 @@ public class DrawerActivity extends AppCompatActivity  implements View.OnClickLi
 
         DrawerListItem dm1 = new DrawerListItem();
         dm1.setTitle(getString(R.string.menu_view_request));
-        dm1.setIcon(R.mipmap.view_request);
+        dm1.setIcon(R.mipmap.menu_request);
 
 
         DrawerListItem dm2 = new DrawerListItem();
         dm2.setTitle(getString(R.string.menu_clock_in_out));
-        dm2.setIcon(R.mipmap.arrival_tim);
+        dm2.setIcon(R.mipmap.menu_attendance);
 
         DrawerListItem dm3 = new DrawerListItem();
-        dm3.setTitle(getString(R.string.menu_quit));
-        dm3.setIcon(R.mipmap.exit);
+        dm3.setTitle(getString(R.string.menu_phone));
+        dm3.setIcon(R.mipmap.menu_phone);
+
+        DrawerListItem dm4 = new DrawerListItem();
+        dm4.setTitle(getString(R.string.menu_restuarant));
+        dm4.setIcon(R.mipmap.menu_rest);
+
+        DrawerListItem dm5 = new DrawerListItem();
+        dm5.setTitle(getString(R.string.menu_quit));
+        dm5.setIcon(R.mipmap.exit);
 
 
         drawerListItemModels.add(dm1);
         drawerListItemModels.add(dm2);
         drawerListItemModels.add(dm3);
+        drawerListItemModels.add(dm4);
+        drawerListItemModels.add(dm5);
 
         DrawerListAdapter drawerListAdapter = new DrawerListAdapter(this, drawerListItemModels);
 
@@ -119,10 +129,18 @@ public class DrawerActivity extends AppCompatActivity  implements View.OnClickLi
         lstMenu.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                if (i == 2) {
-                    //logoff
-                    logOutHandle();
+                switch(i) {
+                    case 0:
+                    {
+                        Intent h = new Intent(view.getContext(), HrRequestActivity.class);
+                        startActivity(h);
+                        break;
+                    }
+                    case 4:
+                    {
 
+                        logOutHandle();break;
+                    }
                 }
             }
         });

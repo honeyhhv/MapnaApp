@@ -1,9 +1,10 @@
-package com.mapna.mapnaapp;
+package com.mapna.mapnaapp.activityClass;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import com.mapna.mapnaapp.R;
 import com.rey.material.widget.ImageView;
 
 public class HourlyMissionActivity extends AppCompatActivity implements View.OnClickListener {

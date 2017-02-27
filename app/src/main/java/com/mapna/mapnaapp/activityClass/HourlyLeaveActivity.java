@@ -1,10 +1,10 @@
-package com.mapna.mapnaapp;
+package com.mapna.mapnaapp.activityClass;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 
+import com.mapna.mapnaapp.R;
 import com.mapna.mapnaapp.tools.PublicMethods;
 import com.mohamadamin.persianmaterialdatetimepicker.date.DatePickerDialog;
 import com.mohamadamin.persianmaterialdatetimepicker.time.RadialPickerLayout;

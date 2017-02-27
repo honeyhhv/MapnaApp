@@ -5,26 +5,31 @@
     <string name="pass">password</string>
     <string name="btnlogin">ورود</string>
     <string name="error_login">نام کاربری یا رمز عبور اشتباه است</string>
+    <string name="error_get_request">اطلاعاتی از سرور دریافت نشد</string>
     <string name="error_Server">خطا در برقراری ارتباط با سرور،وضعیت اینترنت خود را بررسی کرده و مجددا تلاش کنید</string>
 
     <string name="title_activity_main2">Main2Activity</string>
     <string name="title_hourly_leave">درخواست مرخصی ساعتی </string>
     <string name="title_Daily_leave">درخواست مرخصی روزانه </string>
-    <string name="title_overtime_work">درخواست اضافه کار ایام تعطیل </string>
+    <string name="title_overtime_work">درخواست اضافه کار ایام تعطیل پرسنل </string>
     <string name="title_Hourly_mission">درخواست ماموریت ساعتی</string>
+    <string name="title_hr_request">درخواست های قبلی</string>
+    <string name="title_Daily_Sick">مرخصی روزانه استعلاجی</string>
+    <string name="title_Daily_urgent">مرخصی روزانه اضطراری</string>
 
     <string name="Profile">عکس پروفایل کاربر</string>
 
     <string name="menu_view_request"> درخواست های قبلی</string>
     <string name="menu_clock_in_out">ورود و خروج</string>
+    <string name="menu_phone">تلفن پرسنل</string>
+    <string name="menu_restuarant">رستوران های طرف قرارداد</string>
     <string name="menu_quit">خروج</string>
 
-    <string name="menu_fab_overword">اضافه کار ایام تعطیل</string>
+    <string name="menu_fab_overwork">اضافه کار ایام تعطیل</string>
     <string name="menu_fab_daily_vac">مرخصی روزانه</string>
     <string name="menu_fab_hourly_vac">مرخصی ساعتی</string>
     <string name="menu_fab_daily_mission">ماموریت روزانه</string>
     <string name="menu_fab_hourly_mission">ماموریت ساعتی</string>
-    <string name="menu_fab_save_request">ماموریت ساعتی</string>
 
 
     <string name="msg_log_out">کاربر گرامی، آیا مایل به خروج از برنامه می باشید؟</string>
@@ -46,8 +51,69 @@
     <string name="label_Daily2">اضطرار</string>
     <string name="label_Daily3">استعلاجی</string>
     <string name="label_Desc">توضیحات:</string>
+    <string name="label_overtime_desc">دلیل اضافه کاری:</string>
+    <string name="label_overtime_building">ساختمان:</string>
+    <string name="label_overtime_floor">طبقه:</string>
+    <string name="label_overtime_date">تاریخ اضافه کاری:</string>
+    <string name="label_Status">وضعیت:</string>
+    <string name="label_Req_Date">تاریخ درخواست:</string>
+    <string name="label_from">از :</string>
+    <string name="label_To">تا :</string>
+
+
+
+    <string name="req_type_daily">L</string>
+    <string name="req_type_hourly_leave">6</string>
+    <string name="req_type_hourly_mission">2</string>
 
     <string name="mdtp_ok">انتخاب </string>
     <string name="mdtp_cancel">لغو</string>
 
+    <string-array name="bulding_array">
+        <item> میرداماد 1</item>
+        <item> میرداماد 2</item>
+        <item> میرداماد 3</item>
+        <item> کجور</item>
+        <item> گاندی</item>
+        <item> بهره برداری و تعمیراتی مپنا </item>
+    </string-array>
+    <string-array name="floor_array">
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+    </string-array>
+
+    <string-array name="request_array">
+        <item >مرخصی ساعتی</item>
+        <item >ماموریت ساعتی</item>
+        <item >مرخصی روزانه</item>
+        <item>اضافه کار ایام تعطیل</item>
+        <item >ماموریت روزانه</item>
+    </string-array>
+
+    <string name="months_farvardin">فروردین</string>
+    <string name="months_ordibehesht">اردیبهشت</string>
+    <string name="months_khordad">خرداد</string>
+    <string name="months_tir">تیر</string>
+    <string name="months_mordad">مرداد</string>
+    <string name="months_shahrivar">شهریور</string>
+    <string name="months_mehr">مهر</string>
+    <string name="months_aban">آبان</string>
+    <string name="months_azar">آذر</string>
+    <string name="months_dey">دی</string>
+    <string name="months_bahman">بهمن</string>
+    <string name="months_esfand">اسفند</string>
+
+    <string name="soa_mng_confirm">1</string>
+    <string name="soa_hr_confirm">2</string>
+    <string name="soa_accepted">3</string>
+    <string name="soa_mng_rejected">4</string>
+    <string name="soa_hr_rejected">5</string>
 </resources>

@@ -1,4 +1,4 @@
-package com.mapna.mapnaapp;
+package com.mapna.mapnaapp.activityClass;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -14,6 +14,7 @@ import java.io.UnsupportedEncodingException;
 import cz.msebera.android.httpclient.Header;
 import cz.msebera.android.httpclient.util.TextUtils;
 
+import com.mapna.mapnaapp.R;
 import com.mapna.mapnaapp.customViews.customLoginText;
 import com.mapna.mapnaapp.customViews.customProgressbar;
 import com.mapna.mapnaapp.tools.PublicMethods;

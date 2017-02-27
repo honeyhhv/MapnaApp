@@ -122,6 +122,7 @@ public class PersianDatePickerView extends LinearLayout implements View.OnClickL
 
 
        txtInput.setText(year+"/"+month+"/"+ day);
+        txtInput.setEnabled(true);
 
     }
 }

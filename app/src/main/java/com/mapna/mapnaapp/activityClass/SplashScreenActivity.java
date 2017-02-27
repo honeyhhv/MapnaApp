@@ -1,4 +1,4 @@
-package com.mapna.mapnaapp;
+package com.mapna.mapnaapp.activityClass;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,21 +6,15 @@ import android.support.v7.app.AppCompatActivity;
 
 import android.os.Handler;
 import android.util.Log;
-import android.view.View;
 
-import com.loopj.android.http.AsyncHttpClient;
-import com.loopj.android.http.AsyncHttpResponseHandler;
+import com.mapna.mapnaapp.R;
 import com.mapna.mapnaapp.tools.PublicMethods;
 
-import org.json.JSONObject;
-
-import java.io.UnsupportedEncodingException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.Calendar;
 import java.util.Date;
+import java.util.Locale;
 
-import cz.msebera.android.httpclient.Header;
 import cz.msebera.android.httpclient.util.TextUtils;
 
 
@@ -67,13 +61,10 @@ public class SplashScreenActivity extends AppCompatActivity {
         Log.d("AsyncCall", "SplashScreenActivity:HasExpired");
         if (!TextUtils.isEmpty(pm.getShared(getString(R.string.ExpiredDate))))
         {
-            SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd");
+            SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd",Locale.US);
             try {
                 Date expDate = sdf.parse(pm.getShared(getString(R.string.ExpiredDate)));
-                if (new Date().after(expDate)) {
-                    return true;
-                }
-                else return false;
+                return new Date().after(expDate);
 
             } catch (ParseException e) {
                 // TODO Auto-generated catch block
